@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>asu</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      background: black;
+      font-family: Arial, sans-serif;
+    }
+    
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0,0,0,0.5);
+      color: white;
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 999;
+    }
+    
+    .nav h1 {
+      margin: 0;
+      font-size: 1.5em;
+    }
+    
+    .nav a {
+      text-decoration: none;
+      color: white;
+      margin-left: 20px;
+      padding-bottom: 5px;
+      border-bottom: 2px solid transparent;
+      transition: border-bottom-color 0.3s ease;
+    }
+    
+    .nav a.active {
+      border-bottom-color: white;
+    }
+    
+    .konten{
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height:200vh;
+      flex-direction: column;
+      animation: muncul 2s ease-in-out;
+      margin-top: 80px;
+    }
+    
+    .konten h1{
+      font-size: 4em;
+      margin-bottom: 40px;
+    }
+    
+    .konten button{
+      padding: 20px;
+      background:white;
+      color: black;
+      border: none;
+      border-radius:5px;
+      margin: 50px;
+      font-weight: bold;
+      transition: all 0.5s ease;
+      font-size: 15px;
+    }
+    
+    .konten button:hover{
+      transform: translateY(-6px)
+    }
+    
+.tentang {
+  height: 200vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  position: relative;
+}
+
+.ceo{
+  height:90vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.ceo img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+
+    
+    .bok {
+      transition: all 0.5s ease;
+      background:#29292A;
+      border-radius:15px;
+      margin:10px;
+    }.bok:hover{
+      transform: translateY(-6px)
+    }
+    
+    .bok .jul{
+      margin:10px;
+    }
+    
+    .bok p{
+      margin: 15px;
+      font-weight: bold;
+    }
+    
+    .penjelasan{
+      text-align: center;
+      margin-bottom:100px;
+    }
+    
+    footer {
+      background-color: black;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+    }
+    
+    footer p {
+      margin: 0;
+    }
+    
+    @keyframes muncul{
+      from{
+        opacity:0;
+      }
+      to{
+        opacity:1;
+      }
+    }
+    
+    @media only screen and (max-width: 600px){
+      .konten h1{
+        font-size: 1.5rem;
+        
+      }
+      .ceo{
+        height:60vh;
+      }
+      .tentang{
+        height:100vh;
+      }
+      .konten{
+        height:100vh;
+      }
+    }
+  </style>
+</head>
+<body>
+    <div class="nav" id="navbar">
+    <h1>ASU <span style="background:white;border-radius: 3px;color: black;padding: 3px;">/</span></h1>
+    <div class="is">
+      <a href="#kon" class="nav-link" data-target="home">Home</a>
+      <a href="#ten" class="nav-link" data-target="about">About</a>
+      <a href="#ce" class="nav-link" data-target="ceo">CEO</a>
+    </div>
+  </div>
+
+
+
+<div class="konten" id="kon">
+  <h1 id="ketik"></h1>
+  <h2>ASU <span id="cak"></span></h2>
+  <button id="kek" type="button">Chat <i class="material-icons" style="font-size:15px;font-weight: bold;">north_east</i></button>
+</div>
+
+<div id="ten" class="tentang">
+  <div class="garis-hijau"></div>
+  <h1>About ASU</h1>
+  <div class="bok" >
+    <div class="jul">
+      <h3>• ASU?</h3>
+    </div>
+    <p>ASU(Asisten System User) Adalah chat bot gaul asal indonesia yang dapat mengobrol dengan anda secara santai dan selalu bersenang senang karena ASU ini menggunakan teknologi Deep Learning</p>
+  </div>
+  
+ <div class="bok" >
+    <div class="jul">
+      <h3>• Kemampuan?</h3>
+    </div>
+    <p>Selain itu ASU juga jago dalam koding, menjawab soal, dan lainnya dan yang paling menarik ASU memiliki kemampuan untuk mengobrol dengan bahasa gaul dan selalu bercanda</p>
+  </div>
+  
+   <div class="bok" >
+    <div class="jul">
+      <h3>• Kapan Rilis?</h3>
+    </div>
+    <p>ASU akan rilis pada tahun 2030 dan akan menjadi chat bot yang keren dan elegan di masa depan nanti, sampai jumpa dimasa depan dengan Ai kami yang keren ok, tunggu yaaa (;</p>
+  </div>
+  
+</div>
+
+<div class="ceo" id="ce">
+  <div class="foto">
+    <img id="ceo" src="ceo.jpg" alt=".">
+  </div>
+  <div class="penjelasan">
+    <h1>Ferdi || Adyfas</h1>
+    <p>CEO and Founder Of ASU(Asisten System User)</p>
+  </div>
+</div>
+
+<footer>
+  copyright ASU/ 2024
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <script>
+  AOS.init()
+  document.getElementById('kek').addEventListener('click', function() {
+    window.location.href = "#ten";
+  });
+  
+  async function ketik(id, textnya, delaynya) {
+    const elem = document.getElementById(id);
+    const delay = delaynya || 100;
+    for (let i = 0; i < textnya.length; i++) {
+        elem.textContent += textnya[i];
+        await sleep(delay);
+    }
+}
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+
+ketik('ketik', 'Wellcome To Future Of AI')
+setTimeout(function(){
+  ketik('cak', '(Asisten System User)') 
+},3000)
+  
+  
+document.getElementById('ceo').addEventListener('click', function(){
+  window.location.href='https://wa.me/6283182719413'
+})
+
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        const target = this.getAttribute('data-target');
+        navLinks.forEach(link => link.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
